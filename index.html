@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نهاركو الدولية | للخدمات التجارية واللوجستية</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="NAHARCO_ALDUWLYA.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="icon" href="logo.png">
+
+
+
+    <style>
+        :root {
+            --primary-color: #990000;
+            --accent-color: #c5a059;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Tajawal', sans-serif;
+        }
+
+        body {
+            background: #f5f7fa;
+        }
+
+        /* ===== HERO ===== */
+        .hero {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .hero video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            transform: translate(-50%, -50%);
+            object-fit: cover;
+            z-index: -2;
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+        .hero-content h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: auto;
+        }
+
+        /* ===== STATS SECTION (الجزء اللي طالع داخل على الهيرو) ===== */
+        .stats-section {
+            position: relative;
+            margin-top: -90px;
+            /* يخليه نصه داخل الهيرو */
+            z-index: 10;
+            padding: 0 20px;
+        }
+
+        .stats-wrapper {
+            max-width: 1100px;
+            margin: auto;
+            background: #fff;
+            border-radius: 20px;
+            padding: 35px 20px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            text-align: center;
+        }
+
+        .modern-stat i {
+            font-size: 28px;
+            margin-bottom: 15px;
+            color: var(--primary-color);
+        }
+
+        .modern-stat .counter {
+            display: block;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #000;
+            margin-bottom: 5px;
+        }
+
+        .modern-stat p {
+            color: #555;
+            font-weight: 500;
+        }
+
+        /* Responsive */
+        @media(max-width:768px) {
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media(max-width:480px) {
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .vision-points {
+            margin-top: 25px;
+            display: grid;
+            gap: 12px;
+        }
+
+        .vision-points div {
+            background: #fff;
+            padding: 12px 18px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            font-weight: 500;
+            color: #333;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .vision-points i {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo-container">
+                <img src="NAHARCO_ALDUWLYA_Logo.png" alt="لوجو نهاركو الدولية" class="logo-img">
+                <span class="logo-text">نهاركو الدولية</span>
+            </div>
+            <a href="NAHARCO_ALDUWLYA_en.html" class="lang-toggle" title="English"><i class="fas fa-globe"></i></a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">الرئيسية</a></li>
+                <li><a href="AboutUs.html">من نحن</a></li>
+                <li><a href="Services.html">خدماتنا</a></li>
+                <li><a href="ContactUs.html">تواصل معنا</a></li>
+            </ul>
+
+            <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="video-overlay"></div>
+        <video autoplay muted loop playsinline class="hero-video">
+            <source src="img/banner-video.mp4" type="video/mp4">
+            متصفحك لا يدعم تشغيل الفيديو.
+        </video>
+
+        <div class="hero-content">
+            <h1>شركة استيراد وتصدير وتخليص جمركي</h1>
+            <p>شريككم الموثوق في تيسير التجارة العالمية والحلول اللوجستية المتكاملة</p>
+            <div class="hero-btns">
+                <a href="AboutUs.html" class="btn btn-primary">اكتشف المزيد</a>
+                <a href="ContactUs.html" class="btn btn-outline">تواصل معنا</a>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="stats-section">
+        <div class="container stats-grid">
+            <div class="modern-stat">
+                <i class="fas fa-ship fa-2x" style="color: var(--primary-color); margin-bottom:15px;"></i>
+                <span class="counter">+1500</span>
+                <p>شحنة مكتملة</p>
+            </div>
+            <div class="modern-stat">
+                <i class="fas fa-users fa-2x" style="color: var(--primary-color); margin-bottom:15px;"></i>
+                <span class="counter">+300</span>
+                <p>عميل سعيد</p>
+            </div>
+            <div class="modern-stat">
+                <i class="fas fa-award fa-2x" style="color: var(--primary-color); margin-bottom:15px;"></i>
+                <span class="counter">+10</span>
+                <p>سنوات خبرة</p>
+            </div>
+            <div class="modern-stat">
+                <i class="fas fa-globe-africa fa-2x" style="color: var(--primary-color); margin-bottom:15px;"></i>
+                <span class="counter">24/7</span>
+                <p>دعم لوجستي</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="services container">
+        <div class="section-title">
+            <h2>خدماتنا المميزة</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="services-grid">
+            <div class="card">
+                <div class="card-img">
+                    <img src="img/1ar" alt="استشارات جمركية" />
+                </div>
+                <h3> الاستشارات الجمركية والتجارية </h3>
+                <p>نقدم خبرتنا من خلال دعم عملائنا بدراسات جدوى، واستشارات قانونية جمركية وضريبية، وتحليل السوق الكويتي
+                    للوصول بالعميل إلى أفضل قرار.</p>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="img/1" alt="توريد بضائع" style="width: 326.667px; height: 200px;" />
+                </div>
+                <h3>توريد السلع من الصين إلى السوق الكويتي</h3>
+                <p>نحن نربطك مباشرة بمصانع الصين لتوفير أفضل المنتجات والموردين بأسعار تنافسية، مع ضمان الجودة ومتابعة
+                    التفاوض لتحقيق أفضل الشروط للسوق الكويتي.</p>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="img/8" alt="خدمات لوجستية" />
+                </div>
+                <h3> اللوجستيات وحلول الشحن </h3>
+                <p>نقدم خدمات لوجستية متكاملة من الباب إلى الباب بين الكويت والصين، تشمل جميع وسائل الشحن، مع تخزين آمن
+                    وتتبع دقيق لضمان التسليم في الوقت المحدد.</p>
+            </div>
+        </div>
+        <div class="text-center">
+            <a href="Services.html"><button class="btn btn-primary main-btn">عرض كل الخدمات</button></a>
+        </div>
+    </section>
+
+    <section class="bio-section" style="direction: rtl;">
+        <div class="container bio-grid">
+            <div class="bio-image">
+                <img src="img/7.jpg" alt="About Naharcom International" />
+            </div>
+            <div class="bio-text">
+                <h1 style="color: #990000;">طرق الشحن</h1>
+                <p>
+                    <strong>نوفرلكم في شركة نهاركو الدولية</strong> الشحن الجوى والبحري والبرى لسهولة التوصيل من السوق
+                    الصيني الي السوق الكويتي باكثر من طريقة لتسهيل طرق الاستيراد والتصدير.
+                </p>
+                <p>
+                    بفضل خبرتنا الواسعة في الشحن الدولي لنقل طلاباتكم باكثر من طريقة للحفاظ علي امن المنتج وتوصيل الشحنة
+                    باسرع مدة واقل تكلفة..
+                </p>
+                <br>
+                <a href="ContactUs.html">
+                    <button class="btn btn-primary main-btn">لحجز خدمة </button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="bio-section" dir="ltr">
+        <div class="container bio-grid">
+            <div class="bio-image">
+                <img src="img/6" alt="About Naharcom International" />
+            </div>
+            <div class="bio-text">
+                <h1 style="color: #990000;">رؤيتنا في نهاركو الدولية</h1>
+                <p>
+                    في <strong>نهاركو الدولية</strong> نؤمن أن النجاح في التجارة العالمية يبدأ بشريك موثوق.
+                    رؤيتنا هي أن نكون الخيار الأول للشركات الباحثة عن حلول لوجستية متكاملة
+                    تجمع بين السرعة، الأمان، والكفاءة التشغيلية.
+                </p>
+                <p>
+                    نسعى إلى بناء جسور تجارية قوية بين الأسواق العالمية،
+                    مع تقديم خدمات شحن وتخليص جمركي بمعايير احترافية
+                    تضمن لعملائنا تجربة سلسة وتنافسية مستدامة.
+                </p>
+
+                <div class="vision-points">
+                    <div><i class="fas fa-check-circle"></i> حلول لوجستية متكاملة</div>
+                    <div><i class="fas fa-check-circle"></i> التزام كامل بالمواعيد</div>
+                    <div><i class="fas fa-check-circle"></i> شفافية واحترافية في التعامل</div>
+                </div>
+                <br>
+                <a href="AboutUs.html">
+                    <button class="btn btn-primary main-btn">تواصل معنا</button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-col">
+                <h3>نهاركو الدولية</h3>
+                <p>نحن نسعى دائماً لتقديم أفضل الخدمات اللوجستية وحلول التصدير .</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/people/Naharco-Alduwliya-Export-Import/61575225033501/"
+                        target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/naharcokw/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@naharco.alduwliya?_r=1&_t=ZS-942ff78Z5uS" target="_blank"><i
+                            class="fab fa-tiktok"></i></a>
+                    <a href="https://www.linkedin.com/company/naharco-alduwliya-export-import/" target="_blank"><i
+                            class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>روابط سريعة</h3>
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="AboutUs.html">من نحن</a></li>
+                    <li><a href="Services.html">خدماتنا</a></li>
+                    <li><a href="ContactUs.html">تواصل معنا</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>تواصل معنا</h3>
+                <ul>
+                    <li>
+                        <a href="https://www.google.com/maps/search/?api=1&query=ش+فهد+السالم+-+برج+شيخة+ميزانين+1+مكتب+10,+القبلة,+مدينة+الكويت,+الكويت"
+                            target="_blank" rel="noopener noreferrer"
+                            style="color: inherit; display: flex; align-items: center;">
+                            <i class="fas fa-map-marker-alt"></i>
+                            ش فهد السالم - برج شيخة ميزانين 1 مكتب 10
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://wa.me/96550666060" target="_blank" rel="noopener noreferrer"
+                            style="color: inherit; display: flex; align-items: center;">
+                            <i class="fas fa-phone"></i>
+                            +96550666060
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="mailto:NaharCoKw@gmail.com" target="_blank"
+                            style="color: inherit; display: flex; align-items: center;">
+                            <i class="fas fa-envelope"></i> NaharCoKw@gmail.com
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>جميع الحقوق محفوظة @ نهاركو الدولية </p>
+        </div>
+    </footer>
+
+    <script src="NAHARCO_ALDUWLYA.js"></script>
+</body>
+
+</html>

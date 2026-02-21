@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NaharCo Alduwliya | Commercial & Logistics Services</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="NAHARCO_ALDUWLYA.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="logo.png">
+    <style>
+        /* Overrides for LTR */
+        body {
+            font-family: 'Tajawal', sans-serif;
+            text-align: left;
+        }
+
+        /* Removed conflicting navbar margins */
+
+        .btn-outline {
+            margin-right: 0;
+            margin-left: 15px;
+        }
+
+        .footer-col h3::after {
+            right: auto;
+            left: 0;
+        }
+
+        .footer-col ul li i {
+            margin-left: 0;
+            margin-right: 10px;
+        }
+
+        .social-links a {
+            margin-left: 0;
+            margin-right: 10px;
+        }
+
+        .features-list .feature-item i {
+            margin-left: 0;
+            margin-right: 10px;
+        }
+
+        .info-item {
+            gap: 15px;
+        }
+
+        :root {
+            --primary-color: #990000;
+            --accent-color: #c5a059;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Tajawal', sans-serif;
+        }
+
+        body {
+            background: #f5f7fa;
+        }
+
+        .hero {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .hero video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            transform: translate(-50%, -50%);
+            object-fit: cover;
+            z-index: -2;
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+
+        .hero-content p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: auto;
+        }
+
+        /* ===== STATS SECTION (الجزء اللي طالع داخل على الهيرو) ===== */
+        .stats-section {
+            position: relative;
+            margin-top: -90px;
+            /* يخليه نصه داخل الهيرو */
+            z-index: 10;
+            padding: 0 20px;
+        }
+
+        .stats-wrapper {
+            max-width: 1100px;
+            margin: auto;
+            background: #fff;
+            border-radius: 20px;
+            padding: 35px 20px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            text-align: center;
+        }
+
+        .modern-stat i {
+            font-size: 28px;
+            margin-bottom: 15px;
+            color: var(--primary-color);
+        }
+
+        .modern-stat .counter {
+            display: block;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #000;
+            margin-bottom: 5px;
+        }
+
+        .modern-stat p {
+            color: #555;
+            font-weight: 500;
+        }
+
+        /* Responsive */
+        @media(max-width:768px) {
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media(max-width:480px) {
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .vision-points {
+            margin-top: 25px;
+            display: grid;
+            gap: 12px;
+        }
+
+        .vision-points div {
+            background: #fff;
+            padding: 12px 18px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            font-weight: 500;
+            color: #333;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .vision-points i {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo-container">
+                <img src="NAHARCO_ALDUWLYA_Logo.png" alt="NaharCo Alduwliya Logo" class="logo-img">
+                <span class="logo-text">NaharCo Alduwliya</span>
+            </div>
+            <a href="index.html" class="lang-toggle" title="العربية"><i class="fas fa-globe"></i></a>
+            <ul class="nav-links">
+                <li><a href="NAHARCO_ALDUWLYA_en.html" class="active">Home</a></li>
+                <li><a href="AboutUs_en.html">About Us</a></li>
+                <li><a href="Services_en.html">Services</a></li>
+                <li><a href="ContactUs_en.html">Contact Us</a></li>
+            </ul>
+            <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="video-overlay"></div>
+        <video autoplay muted loop playsinline class="hero-video">
+            <source src="img/banner-video.mp4" type="video/mp4">
+            Your browser does not support video playback.
+        </video>
+
+        <div class="hero-content">
+            <h1>Import, Export & Customs Clearance</h1>
+            <p>Your trusted partner in facilitating global trade and integrated logistics solutions.</p>
+            <div class="hero-btns">
+                <a href="Services_en.html" class="btn btn-primary">Discover More</a>
+                <a href="ContactUs_en.html" class="btn btn-outline">Contact Us</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="stats-section">
+        <div class="container stats-grid">
+            <div class="modern-stat">
+                <i class="fas fa-ship fa-2x" style="color: var(--primary-color); margin-bottom:15px;"></i>
+                <span class="counter">+1500</span>
+                <p>Completed Shipments</p>
+            </div>
+            <div class="modern-stat">
+                <i class="fas fa-users fa-2x" style="color: var(--primary-color); margin-bottom:15px;"></i>
+                <span class="counter">+300</span>
+                <p>Happy Clients</p>
+            </div>
+            <div class="modern-stat">
+                <i class="fas fa-award fa-2x" style="color: var(--primary-color); margin-bottom:15px;"></i>
+                <span class="counter">+10</span>
+                <p>Years of Experience</p>
+            </div>
+            <div class="modern-stat">
+                <i class="fas fa-globe-africa fa-2x" style="color: var(--primary-color); margin-bottom:15px;"></i>
+                <span class="counter">24/7</span>
+                <p>Logistics Support</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="services container">
+        <div class="section-title">
+            <h2>Our Premium Services</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="services-grid">
+            <div class="card">
+                <div class="card-img">
+                    <img src="img/1ar" alt="Customs & Trade Consulting" style="width: 326.667px; height: 200px;" />
+                </div>
+                <h3>Customs & Trade Consulting</h3>
+                <p>We provide our expertise by supporting our clients with feasibility studies, legal customs and tax
+                    consulting, and Kuwaiti market analysis to help them make the best decisions.</p>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="img/1" alt="Goods Supply" style="width: 326.667px; height: 200px;" />
+                </div>
+                <h3>Supplying Goods from China to the Kuwaiti Market</h3>
+                <p>We connect you directly with Chinese factories to provide the best products and suppliers at
+                    competitive prices, ensuring quality and negotiating the best terms for the Kuwaiti market.</p>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="img/8" alt="Logistics Services" style="width: 326.667px; height: 200px;" />
+                </div>
+                <h3>Logistics & Shipping Solutions</h3>
+                <p>We offer integrated door-to-door logistics services between Kuwait and China, covering all shipping
+                    methods, with secure storage and accurate tracking to ensure on-time delivery.</p>
+            </div>
+        </div>
+        <div class="text-center">
+            <a href="Services_en.html"><button class="btn btn-primary main-btn">View All Services</button></a>
+        </div>
+    </section>
+
+    <section class="bio-section" dir="rtl">
+        <div class="container bio-grid">
+            <div class="bio-image">
+                <img src="img/7.jpg" alt="About Naharcom International" />
+            </div>
+            <div class="bio-text">
+                <h2>Shipping Methods</h2>
+                <p>
+                    <strong>At Naharcom International Company</strong>, we provide air, sea, and land shipping services
+                    to ensure smooth delivery from the Chinese market to the Kuwaiti market through multiple flexible
+                    import and export solutions.
+                </p>
+                <p>
+                    With our extensive experience in international shipping, we transport your orders through various
+                    methods to ensure product safety, faster delivery times, and the most cost-effective solutions.
+                </p>
+                <br>
+                <a href="ContactUs_en.html">
+                    <button class="btn btn-primary main-btn">Book a Service</button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="bio-section" style="direction: ltr;">
+        <div class="container bio-grid">
+            <div class="bio-image">
+                <img src="img/6" alt="About Naharcom International" />
+            </div>
+            <div class="bio-text">
+                <h1 style="color: #990000;">Our Vision at Naharcom International</h1>
+                <p>
+                    At <strong>Naharcom International</strong>, we believe that success in global trade begins with a
+                    trusted partner.
+                    Our vision is to become the first choice for companies seeking integrated logistics solutions
+                    that combine speed, security, and operational efficiency.
+                </p>
+                <p>
+                    We strive to build strong commercial bridges between global markets,
+                    while providing shipping and customs clearance services with professional standards
+                    that ensure a seamless and sustainably competitive experience for our clients.
+                </p>
+
+                <div class="vision-points">
+                    <div><i class="fas fa-check-circle"></i> Integrated Logistics Solutions</div>
+                    <div><i class="fas fa-check-circle"></i> Full Commitment to Deadlines</div>
+                    <div><i class="fas fa-check-circle"></i> Transparency & Professionalism</div>
+                </div>
+
+                <br>
+                <a href="AboutUs_en.html">
+                    <button class="btn btn-primary main-btn">Learn More</button>
+                </a>
+            </div>
+
+
+        </div>
+    </section>
+
+    <footer id="contact" class="footer">
+        <div class="container footer-container">
+            <div class="footer-col">
+                <h3>NaharCo Alduwliya</h3>
+                <p>We always strive to provide the best logistics services and export solutions to our clients
+                    worldwide.</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/people/Naharco-Alduwliya-Export-Import/61575225033501/"
+                        target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/naharcokw/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@naharco.alduwliya?_r=1&_t=ZS-942ff78Z5uS" target="_blank"><i
+                            class="fab fa-tiktok"></i></a>
+                    <a href="https://www.linkedin.com/company/naharco-alduwliya-export-import/" target="_blank"><i
+                            class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="NAHARCO_ALDUWLYA_en.html">Home</a></li>
+                    <li><a href="AboutUs_en.html">About Us</a></li>
+                    <li><a href="Services_en.html">Services</a></li>
+                    <li><a href="ContactUs_en.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Fahad+Al+Salem+Street+-+Sheikha+Tower,+Mezzanine+1,+Office+10,+Al+Qibla,+Kuwait+City,+Kuwait"
+                            target="_blank" rel="noopener noreferrer"
+                            style="color: inherit; display: flex; align-items: center;">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Fahad Al Salem Street - Sheikha Tower, Mezzanine 1, Office 10
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://wa.me/96550666060" target="_blank" rel="noopener noreferrer"
+                            style="color: inherit; display: flex; align-items: center;">
+                            <i class="fas fa-phone"></i>
+                            +96550666060
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="mailto:NaharCoKw@gmail.com" target="_blank"
+                            style="color: inherit; display: flex; align-items: center;">
+                            <i class="fas fa-envelope"></i> NaharCoKw@gmail.com
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>All Rights Reserved @ NaharCo Alduwliya</p>
+        </div>
+    </footer>
+
+    <script src="NAHARCO_ALDUWLYA.js"></script>
+</body>
+
+</html>
