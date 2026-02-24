@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://naharco-alduwliya.netlify.app/</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://naharco-alduwliya.netlify.app/AboutUs.html</loc>
+  </url>
+
+  <url>
+    <loc>https://naharco-alduwliya.netlify.app/AboutUs_en.html</loc>
+  </url>
+
+  <url>
+    <loc>https://naharco-alduwliya.netlify.app/Services.html</loc>
+  </url>
+
+  <url>
+    <loc>https://naharco-alduwliya.netlify.app/Services_en.html</loc>
+  </url>
+
+  <url>
+    <loc>https://naharco-alduwliya.netlify.app/ContactUs.html</loc>
+  </url>
+
+  <url>
+    <loc>https://naharco-alduwliya.netlify.app/ContactUs_en.html</loc>
+  </url>
+
+  <url>
+    <loc>https://naharco-alduwliya.netlify.app/NAHARCO_ALDUWLIYA_en.html</loc>
+  </url>
+
+</urlset>
